@@ -30,7 +30,7 @@
                         <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="toyClicked:" destination="-1" eventType="touchUpInside" id="i70-AC-7EB"/>
+                        <action selector="addGuitarAtFixedPos:" destination="-1" eventType="touchUpInside" id="9KE-L2-7J8"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XiS-uu-fvU">

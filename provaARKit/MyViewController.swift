@@ -12,7 +12,7 @@ import RealityKit
 class MyViewController: UIViewController, ARSessionDelegate {
 
     @IBOutlet weak var ARView: ARView!
-    private var planeAnchor: AnchorEntity? // riferimento al primo (e unico) piano che riconosciamo
+    private var planeAnchor: AnchorEntity? // riferimento all'ULTIMO piano/ancora riconosciuto
     private var mapPlaneAnchor: [String: UIColor]! // per colorare nello stesso modo i nuovi piani di un'ancora già conosciuta
         
     override func viewDidLoad() {
@@ -31,13 +31,14 @@ class MyViewController: UIViewController, ARSessionDelegate {
 
      // MARK: - 1. Model at Fixed Position
     // posizioniamo il Modello (Entità) nel punto 0,0 della Sessione AR
-    @IBAction func toyClicked(_ sender: Any) {
+    @IBAction func addGuitarAtFixedPos(_ sender: Any) {
         print("Fender Button Clicked")
         let fender = try! ModelEntity.load(named: "fender_stratocaster") // metodo sincrono che caricherà il Modello, bloccherà per un momento il Main Thread
         let originAnchor = AnchorEntity() // di default Ancora creata sul punto x:0 y:0
         originAnchor.addChild(fender)
         ARView.scene.anchors.append(originAnchor)
     }
+    
     
     // MARK:  - 2. Plane Detection + Model at Center Position
     // per il riconoscimento del Piano usiamo le funzionalità base di ARKit di Delegazione del riconscimento di un Ancora (in questo caso di un Piano), ovvero i metodi da implementare di ARSessionDelegate
