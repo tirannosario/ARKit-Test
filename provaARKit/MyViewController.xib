@@ -19,32 +19,38 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ud-Vs-piG">
+                <arView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ud-Vs-piG">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </arView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWb-pJ-PjM">
-                    <rect key="frame" x="20" y="812" width="374" height="48"/>
+                    <rect key="frame" x="112.5" y="820" width="189" height="40"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Plane">
-                        <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="29"/>
+                    <buttonConfiguration key="configuration" style="filled" title=" Fender at Origin">
+                        <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                     </buttonConfiguration>
                     <connections>
                         <action selector="toyClicked:" destination="-1" eventType="touchUpInside" id="i70-AC-7EB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XiS-uu-fvU">
+                    <rect key="frame" x="87.5" y="51" width="239.5" height="40"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title=" Shoe at Plane Center">
+                        <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="addShoeAtPlaneCenter:" destination="-1" eventType="touchUpInside" id="3IZ-kf-F4h"/>
                     </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bWb-pJ-PjM" secondAttribute="trailing" constant="20" id="4QV-nZ-HGa"/>
-                <constraint firstItem="bWb-pJ-PjM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="89r-Xj-00U"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5Ud-Vs-piG" secondAttribute="trailing" id="8KJ-4T-iK6"/>
-                <constraint firstItem="5Ud-Vs-piG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GhT-oR-di9"/>
-                <constraint firstItem="bWb-pJ-PjM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="LmF-hu-SSJ"/>
-                <constraint firstItem="5Ud-Vs-piG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="T2B-dq-EdX"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bWb-pJ-PjM" secondAttribute="bottom" constant="2" id="YiX-zg-3tc"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5Ud-Vs-piG" secondAttribute="bottom" id="f4I-Q5-gP1"/>
-                <constraint firstItem="bWb-pJ-PjM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ygy-7q-EVg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bWb-pJ-PjM" secondAttribute="bottom" constant="2" id="ODe-Ak-haE"/>
+                <constraint firstItem="bWb-pJ-PjM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="afu-RH-FBn"/>
+                <constraint firstItem="XiS-uu-fvU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="7" id="sZL-mY-fcJ"/>
+                <constraint firstItem="XiS-uu-fvU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="skZ-LR-C43"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="130.58035714285714"/>
         </view>

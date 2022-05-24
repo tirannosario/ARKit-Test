@@ -47,12 +47,20 @@
 		1A1A7F7E283BFF2800253307 /* 3dModels */ = {
 			isa = PBXGroup;
 			children = (
+				1A5B36E7283D23C400B961C6 /* Models */,
+			);
+			name = 3dModels;
+			path = ../../3dModels;
+			sourceTree = "<group>";
+		};
+		1A5B36E7283D23C400B961C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				1A1A7F7F283BFF2800253307 /* fender_stratocaster.usdz */,
 				1A1A7F80283BFF2800253307 /* toy_biplane.usdz */,
 				1A1A7F81283BFF2800253307 /* PegasusTrail.usdz */,
 			);
-			name = 3dModels;
-			path = ../../3dModels;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		1A9B8E72283BC23B008BE95F = {
