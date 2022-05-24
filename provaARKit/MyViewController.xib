@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyViewController" customModule="provaARKit" customModuleProvider="target">
+            <connections>
+                <outlet property="ARView" destination="5Ud-Vs-piG" id="npJ-rg-BeK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ud-Vs-piG">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                </arView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWb-pJ-PjM">
+                    <rect key="frame" x="20" y="812" width="374" height="48"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Plane">
+                        <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="29"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="toyClicked:" destination="-1" eventType="touchUpInside" id="i70-AC-7EB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bWb-pJ-PjM" secondAttribute="trailing" constant="20" id="4QV-nZ-HGa"/>
+                <constraint firstItem="bWb-pJ-PjM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="89r-Xj-00U"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5Ud-Vs-piG" secondAttribute="trailing" id="8KJ-4T-iK6"/>
+                <constraint firstItem="5Ud-Vs-piG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GhT-oR-di9"/>
+                <constraint firstItem="bWb-pJ-PjM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="LmF-hu-SSJ"/>
+                <constraint firstItem="5Ud-Vs-piG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="T2B-dq-EdX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bWb-pJ-PjM" secondAttribute="bottom" constant="2" id="YiX-zg-3tc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5Ud-Vs-piG" secondAttribute="bottom" id="f4I-Q5-gP1"/>
+                <constraint firstItem="bWb-pJ-PjM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ygy-7q-EVg"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
